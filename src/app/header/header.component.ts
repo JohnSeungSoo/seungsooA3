@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Seungsoo } from '../seungsoo';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+	currSeungsoo : Seungsoo;
+
   constructor() { }
 
   ngOnInit() {
-  }
-
+		  this.currSeungsoo = {
+			studentId: 991494887,
+			studentName: "Seungsoo Kang",
+			loginName: "seungsoo",
+			campus: "Trafalgar",
+			assignmentTitle: "Assignment3"
+		};
+	}
+	
 }
