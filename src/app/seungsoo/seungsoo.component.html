@@ -1,0 +1,40 @@
+<div class="grid-container1">
+		<div class="grid-item">
+			<section id="nav">
+				<!-- <div *ngFor="let person of mybooks.list; let i = index"> -->
+					<button *ngFor="let person of mybooks.list; let i = index" (click)="displayBook(i)">
+						{{person.name}}
+					</button>
+				<!-- </div> -->
+			</section>
+		</div>
+		<div class="grid-item">
+			<div class="grid-container2">
+					<div class="grid-item">
+						<img src="{{bookSelected.picture}}" alt="{{bookSelected.name}}">
+					</div>
+					<div class="grid-item">
+						<table>
+							<tr>
+								<td>Name:</td>
+								<td>{{bookSelected.name}}</td>
+							</tr>
+							<tr>
+								<td>Author:</td>
+								<td>{{bookSelected.author}}</td>
+							</tr>
+							<tr>
+								<td>Genre:</td>
+								<td>{{bookSelected.genre}}</td>
+							</tr>
+							<tr>
+								<td>Year:</td>
+								<td>{{bookSelected.year}}</td>
+							</tr>
+							</table>
+					</div>
+			</div>
+		</div>
+		
+	</div>
+	

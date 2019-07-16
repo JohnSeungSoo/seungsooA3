@@ -1,41 +1,41 @@
 import { Book } from './book';
 
-export class myBooks {
+export class MyBooks {
 
-	mybooks : Book[] = new Array(4);
+	list : Book[] = new Array(4);
 
   constructor() { 
 
-		this.mybooks[0] = {
+		this.list[0] = {
 			name: "Network Engineering",
 			author: "Bob",
 			genre: "Science",
 			year: "2015",
-			picture: ""
+			picture: "../assets/images/network.png"
 		};
 
-		this.mybooks[1] = {
+		this.list[1] = {
 			name: "Clean Code",
 			author: "Uncle",
 			genre: "Programming",
 			year: "2007",
-			picture: ""
+			picture: "../assets/images/clean.png"
 		};
 
-		this.mybooks[2] = {
+		this.list[2] = {
 			name: "Angular Mobile",
 			author: "Ronak",
 			genre: "Programming",
 			year: "2019",
-			picture: ""
+			picture: "../assets/images/angular.png"
 		};
 
-		this.mybooks[3] = {
+		this.list[3] = {
 			name: "Oracle SQL",
 			author: "John",
 			genre: "Database",
 			year: "2018",
-			picture: ""
+			picture: "../assets/images/oracle.png"
 		};
 
 	}
